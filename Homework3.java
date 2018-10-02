@@ -1,11 +1,11 @@
 /*
- * First and Last Names
+ George Doster
  */
 
 public class Homework3 {
 
 	private int value1, value2, value3;
-
+	private int sum;
 	public Homework3(int v1, int v2, int v3) {
 		value1 = v1;
 		value2 = v2;
@@ -17,12 +17,15 @@ public class Homework3 {
 	 * class (e.g. Math.random())
 	 */
 	public void grade() {
-
+Homework3.grade(this);
 	}
 
 	/* Calculate and return the sum of value1, value2, and value3
 	 */
 	public int sum() {
+
+		sum = value1 + value2 + value3;
+		return sum;
 
 	}
 
@@ -31,12 +34,18 @@ public class Homework3 {
 	 */
 	public double average() {
 
+		double avg = sum/3 + 0.0;
+		return avg;
+
 	}
 
 	/* Calculate and return the difference between the product and sum of
 	 * value 1, value2, and value3
 	 */
 	 public int productSumDifference() {
+		 int product = (value1 * value2 * value3);
+		 int productSumDifference= product-sum;
+		 return productSumDifference;
 
 	 }
 
@@ -45,6 +54,8 @@ public class Homework3 {
 	  */
 	  public int sumSquares() {
 
+			int sumSquares= value1*value1 + value2*value2 + value3*value3;
+			return sumSquares;
 	  }
 
 	  /* Tests to verify that your solutions work
